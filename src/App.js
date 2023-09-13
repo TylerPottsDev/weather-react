@@ -42,7 +42,7 @@ function App() {
             placeholder="Search..."
             onChange={e => setQuery(e.target.value)}
             value={query}
-            onKeyPress={search}
+            onKeyDown={search}
           />
         </div>
         {(typeof weather.main != "undefined") ? (
